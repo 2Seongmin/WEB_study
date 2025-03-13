@@ -31,19 +31,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.jsp">홈</a></li>
-                <li class="nav-item"><a class="nav-link" href="menu.jsp">메뉴</a></li>
-                <li class="nav-item"><a class="nav-link" href="store.jsp">매장찾기</a></li>
-                <li class="nav-item"><a class="nav-link" href="order.jsp">멤버십</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu">메뉴</a></li>
+                <li class="nav-item"><a class="nav-link" href="store">매장찾기</a></li>
+                <li class="nav-item"><a class="nav-link" href="order">멤버십</a></li>
 	
                 <c:choose>
                     <c:when test="${empty loginMember}">
-                        <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#log-in">로그인</a></li>
-                        <li class="nav-item"><a class="nav-link" href="join.jsp">회원가입</a></li>
+                        <li class="nav-item">
+                        	<a class="nav-link" href="#" data-toggle="modal" data-target="#log-in">로그인</a>
+                        </li>
+                        <li class="nav-item">
+                        	<a class="nav-link" href="sign-up">회원가입</a>
+                        </li>
                     </c:when>
                     <c:otherwise>
-                        <li class="nav-item"><a class="nav-link" href="myPage.jsp">내정보</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="logout.jsp" onclick="return confirm('로그아웃 하시겠습니까?')">로그아웃</a>
+                        	<a class="nav-link" href="my-page">내정보</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="log-out" onclick="return confirm('로그아웃 하시겠습니까?')">로그아웃</a>
                         </li>
                     </c:otherwise>
                 </c:choose>
@@ -61,7 +67,7 @@
 				<!-- Modal body -->
 				<div class="modal-body">
 	
-					<form action="/firstweb/sign-in" name="sign-in" method="post" id="signInForm"
+					<form action="/project01/sign-in" name="sign-in" method="post" id="signInForm"
 						style="margin-bottom: 0;">
 						<table style="cellpadding: 0; cellspacing: 0; margin: 0 auto; width: 100%">
 							<tr>

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Noto Sans KR';
+    padding-top: 80px; 
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    border-color: #2575fc;
+    box-shadow: 0px 0px 10px rgba(37, 117, 252, 0.5);
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: #2575fc;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background: #ff5352;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #e63e3d;
+    transform: scale(1.05);
+}
+
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background: #2575fc;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-footer {
+    background: #f1f1f1;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
