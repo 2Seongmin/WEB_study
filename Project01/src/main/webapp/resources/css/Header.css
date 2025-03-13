@@ -1,0 +1,126 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #F8F1E7;
+    color: #4A3C31;
+    margin: 0;
+    padding: 0;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar {
+    background-color: #6F4E37; /* 따뜻한 브라운 컬러 */
+    padding: 10px 20px;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFD700 !important; /* 골드 색상으로 하이라이트 */
+}
+
+/* 로그인 버튼 */
+#signIn-btn {
+    background-color: #6F4E37;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+}
+
+#signIn-btn:hover {
+    background-color: #8B5E3B;
+    opacity: 0.9;
+}
+
+/* 배경 스타일 */
+#sub-bg {
+    width: 80%;
+    margin: auto;
+    height: 1200px;
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+/* 이미지 스타일 */
+#sub-1, #sub-2 {
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 로그인 모달 창 스타일 */
+.modal-content {
+    background-color: #F8F1E7;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #6F4E37;
+}
+
+.close {
+    color: #6F4E37;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    background: none;
+    border: none;
+}
+
+.close:hover {
+    color: #8B5E3B;
+}
+
+.modal-body input[type="text"],
+.modal-body input[type="password"] {
+    border: 1px solid #D3B8A6;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #FFF;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.modal-body input[type="text"]:focus,
+.modal-body input[type="password"]:focus {
+    border-color: #8B5E3B;
+    box-shadow: 0px 0px 8px rgba(139, 94, 59, 0.3);
+}
+
+.modal-footer #signIn-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-footer #signIn-btn:hover {
+    background-color:  #6F4E37;
+}
+
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+}
